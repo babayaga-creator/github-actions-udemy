@@ -1,0 +1,23 @@
+name: Shell Commands
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:   
+  run-shell-command:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: echo a string 
+        run: echo "Helo from github actions"
+
+      - name: multiline commands 
+        run: |
+          node -v 
+          npm -v 
+          python3 -v 
+            
