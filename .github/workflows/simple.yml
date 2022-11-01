@@ -19,5 +19,4 @@ jobs:
         run: |
           node -v 
           npm -v 
-          python3 -v 
-            
+          python3 -version
