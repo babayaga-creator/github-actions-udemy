@@ -6,7 +6,7 @@ on:
       - closed 
       - assigned
       - opened 
-      - reopened 
+      - reopened
 
 
 jobs:
