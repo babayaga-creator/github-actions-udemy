@@ -1,9 +1,7 @@
 name : Actions workflow 
 
-on:
-  pull_request:
-    branches:
-      - arif
+on: [pull_request]
+
 
 jobs:
   run-github-actions:
