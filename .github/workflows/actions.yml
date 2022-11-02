@@ -3,7 +3,7 @@ name : Actions workflow
 on: 
   pull_request:
     branches:
-      - 'arif'
+      - arif
 
 jobs:
   run-github-actions:
