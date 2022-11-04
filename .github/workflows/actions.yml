@@ -4,19 +4,25 @@ on:
   #schedule: 
    # - cron: "0/5 * * * *"
     #- cron: "0/6 * * * *"
-  workflow_dispatch:
+  push:
+    branches:  # You cant use branches and branches-ignore in the same workflow
+      - arif 
+      - '!arif/test' # wont run the workflow on branch arif/test ! means not
+  
+    
+    tags-ignore:             # you can even use tags 
+      - v1.*
 
-  push: 
-    branches:
-      - arif
+
+    paths-ignore:            # you can even use paths, and dont forget ! (not keyword)
+      - 'docs/**'
 
   pull_request:
     types:
       - closed 
       - assigned
       - opened 
-      - reopened 
-
+      - reopened
 
 
 jobs:
