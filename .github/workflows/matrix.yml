@@ -1,0 +1,20 @@
+name: Matrix 
+
+on: 
+    workflow_dispatch:
+
+jobs:
+  node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log node version 
+        run: node -v 
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 10
+      - name: Log node version 
+        run: node -v     
+
+
+
+  
