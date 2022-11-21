@@ -21,7 +21,8 @@ jobs:
 
       - name: check py version 
         run: python3 --version   
-      - run: docker --version  
+      - name: check docker version  
+        run: docker --version  
 
 
 
